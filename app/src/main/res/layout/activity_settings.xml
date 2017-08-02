@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg_sd"
+    android:scaleType = "centerCrop"
+    tools:context="com.lwd112.lwd.a4d_2017.SettingsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBgGradient"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/image_logo_settings" />
+
+        <TextView
+            android:text="Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textSize="36sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryLight" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/Buttons"
+            android:layout_height="330dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/sor1"
+                android:layout_marginTop="3dp"
+                android:layout_height="62dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="left"
+                    android:background="@color/colorAccent">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/settings_icon1"
+                        android:id="@+id/settings_icon1"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:text="Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/settings_switch1"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:theme="@style/A4DSwitch"
+                        android:trackTint="@color/colorPrimaryLight"
+                        android:checked="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@color/colorBgGradient"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_alarm_text1"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textSize="32sp"
+                            android:layout_width="match_parent"
+                            android:text="09:00"
+                            android:textColor="@color/colorPrimaryLight" />
+
+                        <TextView
+                            android:text="+/- 5min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_jitter_text1"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_settings_60"
+                        android:id="@+id/settings_button_1"
+                        android:layout_weight="0.1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:clickable="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/sor2"
+                android:layout_marginTop="3dp"
+                android:layout_height="62dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="left"
+                    android:background="@color/colorAccent">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/settings_icon2"
+                        android:id="@+id/settings_icon2"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+
+                    <Switch
+                        android:text="Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/settings_switch2"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:theme="@style/A4DSwitch"
+                        android:trackTint="@color/colorPrimaryLight"
+                        android:checked="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@color/colorBgGradient"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_alarm_text2"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textSize="32sp"
+                            android:layout_width="match_parent"
+                            android:text="13:00"
+                            android:textColor="@color/colorPrimaryLight" />
+
+                        <TextView
+                            android:text="+/- 15min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_jitter_text2"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_settings_60"
+                        android:id="@+id/settings_button_2"
+                        android:layout_weight="0.1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:clickable="true" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/sor3"
+                android:layout_marginTop="3dp"
+                android:layout_height="62dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="left"
+                    android:background="@color/colorAccent">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/settings_icon3"
+                        android:id="@+id/settings_icon3"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+                    <Switch
+                        android:text="Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/settings_switch3"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:theme="@style/A4DSwitch"
+                        android:trackTint="@color/colorPrimaryLight"
+                        android:checked="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@color/colorBgGradient"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_alarm_text3"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textSize="32sp"
+                            android:layout_width="match_parent"
+                            android:text="17:00"
+                            android:textColor="@color/colorPrimaryLight" />
+
+                        <TextView
+                            android:text="+/- 30min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_jitter_text3"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_settings_60"
+                        android:id="@+id/settings_button_3"
+                        android:layout_weight="0.1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:clickable="true" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/sor4"
+                android:layout_marginTop="3dp"
+                android:layout_height="62dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="left"
+                    android:background="@color/colorAccent">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/settings_icon4"
+                        android:id="@+id/settings_icon4"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+
+                    <Switch
+                        android:text="Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/settings_switch4"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:theme="@style/A4DSwitch"
+                        android:trackTint="@color/colorPrimaryLight"
+                        android:checked="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@color/colorBgGradient"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_alarm_text4"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textSize="32sp"
+                            android:layout_width="match_parent"
+                            android:text="19:00"
+                            android:textColor="@color/colorPrimaryLight" />
+
+                        <TextView
+                            android:text="+/- 5min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_jitter_text4"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_settings_60"
+                        android:id="@+id/settings_button_4"
+                        android:layout_weight="0.1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:clickable="true" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/sor5"
+                android:layout_marginTop="3dp"
+                android:layout_height="62dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="left"
+                    android:background="@color/colorAccent">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/settings_icon05"
+                        android:id="@+id/settings_icon5"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+
+                    <Switch
+                        android:text="Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/settings_switch5"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:theme="@style/A4DSwitch"
+                        android:trackTint="@color/colorPrimaryLight"
+                        android:checked="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@color/colorBgGradient"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_alarm_text5"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textSize="32sp"
+                            android:layout_width="match_parent"
+                            android:text="21:00"
+                            android:textColor="@color/colorPrimaryLight" />
+
+                        <TextView
+                            android:text="+/- 0min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/settings_jitter_text5"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_settings_60"
+                        android:id="@+id/settings_button_5"
+                        android:layout_weight="0.1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:clickable="true" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="60dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:text="@string/btn_text_ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btn_Settings2OK"
+                            android:layout_weight="9"
+                            android:drawableRight="@drawable/icon_ok_check_60"
+                            android:textAllCaps="false"
+                            android:drawablePadding="-130dp"
+                            android:paddingRight="100dp"
+                            android:background="@color/colorOrange"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btn_Settings2Back"
+                            android:layout_weight="0.1"
+                            android:background="@color/colorOrangeDark"
+                            android:drawableLeft="@drawable/icon_back_text"
+                            android:paddingLeft="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

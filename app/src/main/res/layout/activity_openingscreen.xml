@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sd"
+    android:scaleType = "centerCrop"
+    tools:context="com.lwd112.lwd.a4d_2017.Openingscreen">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/image_logo_openingscreen" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="251dp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/title"
+            android:id="@+id/image_title_openingsreen" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="60dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:text="@string/btn_text_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btn_Opening2Settings"
+                            android:layout_weight="0.1"
+                            android:drawableLeft="@drawable/icon_settings_60"
+                            android:drawablePadding="-60dp"
+                            android:paddingLeft="80dp"
+                            android:textAllCaps="false"
+                            android:background="@color/colorOrange"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btn_Opening2Help"
+                            android:layout_weight="0.51"
+                            android:background="@color/colorOrangeDark"
+                            android:drawableLeft="@drawable/icon_info_60"
+                            android:paddingLeft="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

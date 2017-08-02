@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="A4DSwitch" parent="Theme.AppCompat.Light">
+
+        <item name="colorPrimary">#f77f1d</item>
+        <item name="colorPrimaryDark">#f77f1d</item>
+        <item name="colorAccent">#f77f1d</item>
+        <item name="colorControlNormal">#f77f1d</item>
+        <item name="colorControlActivated">#f77f1d</item>
+        <item name="colorControlHighlight">#f77f1d</item>
+        <item name="colorSwitchThumbNormal">#f77f1d</item>
+
+    </style>
+
+</resources>
