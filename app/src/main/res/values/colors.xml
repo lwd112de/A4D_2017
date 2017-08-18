@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorPrimaryLight">#ffffff</color>
     <color name="colorAccent">#66000000</color>
+    <color name="colorLightAccent">#19000000</color>
     <color name="colorBgGradient">#95000000</color>
     <color name="colorOrange">#f77f1d</color>
     <color name="colorOrangeDark">#d55e07</color>

@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">A4D_2017</string>
-    <string name="btn_text_about">about</string>
     <string name="btn_text_settings">settings</string>
-    <string name="btn_text_ok">ok</string>
+    <string name="btn_text_calendar">calendar</string>
+    <string name="btn_text_help">help</string>
+    <string name="btn_text_about">about</string>
     <string name="btn_text_export">export</string>
+    <string name="btn_text_ok">ok</string>
     <string name="help_text">Alarm for Diabetics alkalmazással napi szinten tudod rendszerezni kezeléseidet,
     vércukorszint méréseidet. Beépített naptárba regisztrálhatod, és nyomon követheted az értékeidet,
     melyeket Excel formátumban ki is exportálhatsz</string>
